@@ -6,6 +6,7 @@ int choice;
 double balance = 1000.00;
 double deposit;
 int billEntered; 
+int depositTotal;
 
   
 // prints menu of choices for the user to pick from 
@@ -23,7 +24,7 @@ if (choice == 1){
   printf("Please enter your canadian bills (5, 10, 20, 50 or 100) and enter X when your'e done: ")
   scanf("%d\n", &billEntered);
   while (billEntered != 'X' || billEntered != 'x'){
-    
+    depositTotal += billEntered;
    }
       
   
